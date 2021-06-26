@@ -1,0 +1,65 @@
+% \PassOptionsToPackage{disable}{todonotes} % 关闭todo标签
+\documentclass[pdfCover]{contestTemplate} % 需要pdf封面
+% \documentclass[ebook]{contestTemplate} % 电子书版本，自己看看就好
+
+%%%%%%%%%% 行号修改需要检查makefile(不使用请忽略)
+\title{测试电子设计竞赛模板}
+\author{陈伯硕}
+\date{\today}
+
+\usepackage{subfiles}
+\begin{document}
+
+% TODO 提交最终版论文时别忘了关闭（第1行）
+% 或者使用makefile生成的build/release.pdf
+\listoftodos
+
+\maketitle
+
+% Generate the Table of Contents if it's needed.
+\tableofcontents
+\newpage
+
+\section{section}
+\subsection{subsection}
+\subsubsection{subsubsection}
+
+\section{符号表}
+
+\glsxtrnewsymbol[
+	description={%
+		an example symbol % 对符号的描述
+	},
+	unit={\si{m^2}} % 单位，不显示可以不写
+]{e}{\ensuremath{\mathcal{E}}}
+
+% 符号表
+\printunsrtglossary[type=symbols,style=symbunitlong] % symbols
+
+% 带单位的符号表
+% \printunsrtglossary[type=symbols,style=symblong] % symbols without units
+
+
+\section{插入代码}
+\begin{codebox}
+  \Procname{$bubble\_sort$($A$: the array, $n$: the length of nums)}
+  \li $a = 1$
+  % \li
+
+\end{codebox}
+
+\section{来自inkscape的图片}
+	%\cref{fig:_test}
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{0.6\linewidth}
+		\input{figures/_test.pdf_tex}
+		\caption{测试图片}
+		\label{fig:_test}
+	\end{figure}
+	\todo{测试一个TODO}
+
+
+\bibliography{reference/reference}
+\nocite{*}
+\end{document}

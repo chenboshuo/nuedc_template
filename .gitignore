@@ -1,0 +1,17 @@
+# sdcc 编译中间文件
+*.gch
+*.asm
+*.ihx
+*.lk
+*.lst
+*.map
+*.mem
+*.rel
+*.rst
+*.sym
+
+
+# 文档
+**/build
+docs/source/api
+!docs/**/*.rst

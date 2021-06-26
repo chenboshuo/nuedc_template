@@ -1,0 +1,2 @@
+# electronics_design_contest_template
+全国大学生电子设计竞赛 latex 模板

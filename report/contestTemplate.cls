@@ -681,4 +681,15 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \RequirePackage{todonotes}
 \setuptodonotes{inline, color=blue!30}
 
+%# 页码放到右下角
+% https://tex.stackexchange.com/questions/153167/how-to-set-page-number-at-right-footer
+% Turn on the style
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+
 \endinput

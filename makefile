@@ -2,7 +2,7 @@
 .ONESHELL: # Applies to every targets in the file!
 # .INTERMEDIATE : report
 ## make all : regenerate all results.
-all: release
+all: report
 
 ## make quick_report: genreate the main file qucikly
 quick_report:
@@ -14,7 +14,7 @@ report: docs
 	pdftk report/build/release.pdf \
 	  docs/build/doxygen_latex/refman.pdf \
 		cat output report/build/_release.pdf
-	mv report/build/release.pdf report/build/release_without_attachment.pdf 
+	mv report/build/release.pdf report/build/release_without_attachment.pdf
 	mv report/build/_release.pdf report/build/release.pdf
 
 ## make docs: generate the docs from doxygen

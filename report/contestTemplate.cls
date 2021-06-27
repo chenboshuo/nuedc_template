@@ -189,19 +189,46 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	\abovedisplayskip 12\p@ \@plus3\p@ \@minus7\p@
 	\abovedisplayshortskip \z@ \@plus3\p@
 	\belowdisplayshortskip 6.5\p@ \@plus3.5\p@ \@minus3\p@}
+
+  %%%数学定理相关的常量
+  % \newcommand*{\contest@cap@definition}{定义}
+  % \newcommand*{\contest@cap@theorem}{定理}
+  % \newcommand*{\contest@cap@lemma}{引理}
+  % \newcommand*{\contest@cap@corollary}{推论}
+  % \newcommand*{\contest@cap@assumption}{假设}
+  % \newcommand*{\contest@cap@conjecture}{猜想}
+  % \newcommand*{\contest@cap@axiom}{公理}
+  % \newcommand*{\contest@cap@principle}{定律}
+  % \newcommand*{\contest@cap@problem}{问题}
+  % \newcommand*{\contest@cap@example}{例}
+  % \newcommand*{\contest@cap@proof}{证明}
+  % \newcommand*{\contest@cap@solution}{解}
+  % %%%  中文标题名称
+  % \newcommand*{\contest@cap@contentsname}{目录}
+  % \newcommand*{\contest@cap@listfigurename}{插图清单}
+  % \newcommand*{\contest@cap@listtablename}{附表清单}
+  % \newcommand*{\contest@cap@refname}{参考文献}
+  % \newcommand*{\contest@cap@indexname}{索引}
+  % \newcommand*{\contest@cap@figurename}{图}
+  % \newcommand*{\contest@cap@tablename}{表}
+  % \newcommand*{\contest@cap@appendixname}{附录}
+  % \newcommand*{\contest@cap@abstractname}{摘要}
+  %%%  中文关键字
+  % \newcommand*{\contest@cap@keywordsname}{关键字}
+
 % 数学环境, 定理等设置
-\newtheorem{definition}{\myreport@cap@definition}
-\newtheorem{theorem}{\myreport@cap@theorem}
-\newtheorem{lemma}{\myreport@cap@lemma}
-\newtheorem{corollary}{\myreport@cap@corollary}
-\newtheorem{assumption}{\myreport@cap@assumption}
-\newtheorem{conjecture}{\myreport@cap@conjecture}
-\newtheorem{axiom}{\myreport@cap@axiom}
-\newtheorem{principle}{\myreport@cap@principle}
-\newtheorem{problem}{\myreport@cap@problem}
-\newtheorem{example}{\myreport@cap@example}
-\newtheorem{proof}{\myreport@cap@proof}
-\newtheorem{solution}{\myreport@cap@solution}
+\newtheorem{definition}{\contest@cap@definition}
+\newtheorem{theorem}{\contest@cap@theorem}
+\newtheorem{lemma}{\contest@cap@lemma}
+\newtheorem{corollary}{\contest@cap@corollary}
+\newtheorem{assumption}{\contest@cap@assumption}
+\newtheorem{conjecture}{\contest@cap@conjecture}
+\newtheorem{axiom}{\contest@cap@axiom}
+\newtheorem{principle}{\contest@cap@principle}
+\newtheorem{problem}{\contest@cap@problem}
+\newtheorem{example}{\contest@cap@example}
+\newtheorem{proof}{\contest@cap@proof}
+\newtheorem{solution}{\contest@cap@solution}
 
 % 浮动环境设置
 % 默认情况下, \LaTeX{} 要求每页的文字至少占据 20%,否则该页就只单独放置一个浮动环境,
@@ -293,53 +320,53 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \crefrangeformat{equation}{公式(#3#1#4)\;\~{}\;(#5#2#6)}
 \crefmultiformat{equation}{公式(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{definition}{#2\myreport@cap@definition~#1#3}
-\crefrangeformat{definition}{\myreport@cap@definition~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{definition}{\myreport@cap@definition~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{definition}{#2\contest@cap@definition~#1#3}
+\crefrangeformat{definition}{\contest@cap@definition~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{definition}{\contest@cap@definition~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{theorem}{#2\myreport@cap@theorem~#1#3}
-\crefrangeformat{theorem}{\myreport@cap@theorem~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{theorem}{\myreport@cap@theorem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{theorem}{#2\contest@cap@theorem~#1#3}
+\crefrangeformat{theorem}{\contest@cap@theorem~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{theorem}{\contest@cap@theorem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{lemma}{#2\myreport@cap@lemma~#1#3}
-\crefrangeformat{lemma}{\myreport@cap@lemma~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{lemma}{\myreport@cap@lemma~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{lemma}{#2\contest@cap@lemma~#1#3}
+\crefrangeformat{lemma}{\contest@cap@lemma~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{lemma}{\contest@cap@lemma~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{corollary}{#2\myreport@cap@corollary~#1#3}
-\crefrangeformat{corollary}{\myreport@cap@corollary~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{corollary}{\myreport@cap@corollary~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{corollary}{#2\contest@cap@corollary~#1#3}
+\crefrangeformat{corollary}{\contest@cap@corollary~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{corollary}{\contest@cap@corollary~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{assumption}{#2\myreport@cap@assumption~#1#3}
-\crefrangeformat{assumption}{\myreport@cap@assumption~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{assumption}{\myreport@cap@assumption~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{assumption}{#2\contest@cap@assumption~#1#3}
+\crefrangeformat{assumption}{\contest@cap@assumption~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{assumption}{\contest@cap@assumption~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{conjecture}{#2\myreport@cap@conjecture~#1#3}
-\crefrangeformat{conjecture}{\myreport@cap@conjecture~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{conjecture}{\myreport@cap@conjecture~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{conjecture}{#2\contest@cap@conjecture~#1#3}
+\crefrangeformat{conjecture}{\contest@cap@conjecture~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{conjecture}{\contest@cap@conjecture~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{axiom}{#2\myreport@cap@axiom~#1#3}
-\crefrangeformat{axiom}{\myreport@cap@axiom~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{axiom}{\myreport@cap@axiom~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{axiom}{#2\contest@cap@axiom~#1#3}
+\crefrangeformat{axiom}{\contest@cap@axiom~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{axiom}{\contest@cap@axiom~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{principle}{#2\myreport@cap@principle~#1#3}
-\crefrangeformat{principle}{\myreport@cap@principle~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{principle}{\myreport@cap@principle~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{principle}{#2\contest@cap@principle~#1#3}
+\crefrangeformat{principle}{\contest@cap@principle~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{principle}{\contest@cap@principle~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{problem}{#2\myreport@cap@problem~#1#3}
-\crefrangeformat{problem}{\myreport@cap@problem~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{problem}{\myreport@cap@problem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{problem}{#2\contest@cap@problem~#1#3}
+\crefrangeformat{problem}{\contest@cap@problem~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{problem}{\contest@cap@problem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{example}{#2\myreport@cap@example~#1#3}
-\crefrangeformat{example}{\myreport@cap@example~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{example}{\myreport@cap@example~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{example}{#2\contest@cap@example~#1#3}
+\crefrangeformat{example}{\contest@cap@example~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{example}{\contest@cap@example~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{proof}{#2\myreport@cap@proof~#1#3}
-\crefrangeformat{proof}{\myreport@cap@proof~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{proof}{\myreport@cap@proof~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{proof}{#2\contest@cap@proof~#1#3}
+\crefrangeformat{proof}{\contest@cap@proof~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{proof}{\contest@cap@proof~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{solution}{#2\myreport@cap@solution~#1#3}
-\crefrangeformat{solution}{\myreport@cap@solution~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{solution}{\myreport@cap@solution~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{solution}{#2\contest@cap@solution~#1#3}
+\crefrangeformat{solution}{\contest@cap@solution~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{solution}{\contest@cap@solution~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 中文标题格式设置
@@ -408,10 +435,10 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	{\endlist}
 
 \newcommand\keywords[1]{%
-	\renewcommand{\myreport@tokens@keywords}{#1}
+	\newcommand{\myreport@tokens@keywords}{#1}
 	\par
 	\vskip1ex
-	{\noindent\zihao{-4}\heiti\myreport@cap@keywordsname：}~{\myreport@tokens@keywords}
+	{\noindent\zihao{-4}\heiti\contest@cap@keywordsname：}~{\myreport@tokens@keywords}
 	}
 % 定义附录
 
@@ -426,30 +453,30 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
 %% Initialization
  %%%数学定理相关的常量
-\newcommand*{\myreport@cap@definition}{定义}
-\newcommand*{\myreport@cap@theorem}{定理}
-\newcommand*{\myreport@cap@lemma}{引理}
-\newcommand*{\myreport@cap@corollary}{推论}
-\newcommand*{\myreport@cap@assumption}{假设}
-\newcommand*{\myreport@cap@conjecture}{猜想}
-\newcommand*{\myreport@cap@axiom}{公理}
-\newcommand*{\myreport@cap@principle}{定律}
-\newcommand*{\myreport@cap@problem}{问题}
-\newcommand*{\myreport@cap@example}{例}
-\newcommand*{\myreport@cap@proof}{证明}
-\newcommand*{\myreport@cap@solution}{解}
+\newcommand*{\contest@cap@definition}{定义}
+\newcommand*{\contest@cap@theorem}{定理}
+\newcommand*{\contest@cap@lemma}{引理}
+\newcommand*{\contest@cap@corollary}{推论}
+\newcommand*{\contest@cap@assumption}{假设}
+\newcommand*{\contest@cap@conjecture}{猜想}
+\newcommand*{\contest@cap@axiom}{公理}
+\newcommand*{\contest@cap@principle}{定律}
+\newcommand*{\contest@cap@problem}{问题}
+\newcommand*{\contest@cap@example}{例}
+\newcommand*{\contest@cap@proof}{证明}
+\newcommand*{\contest@cap@solution}{解}
  %%%  中文标题名称
-\newcommand*{\myreport@cap@contentsname}{目录}
-\newcommand*{\myreport@cap@listfigurename}{插图清单}
-\newcommand*{\myreport@cap@listtablename}{附表清单}
-\newcommand*{\myreport@cap@refname}{参考文献}
-\newcommand*{\myreport@cap@indexname}{索引}
-\newcommand*{\myreport@cap@figurename}{图}
-\newcommand*{\myreport@cap@tablename}{表}
-\newcommand*{\myreport@cap@appendixname}{附录}
-\newcommand*{\myreport@cap@abstractname}{摘要}
+\newcommand*{\contest@cap@contentsname}{目录}
+\newcommand*{\contest@cap@listfigurename}{插图清单}
+\newcommand*{\contest@cap@listtablename}{附表清单}
+\newcommand*{\contest@cap@refname}{参考文献}
+\newcommand*{\contest@cap@indexname}{索引}
+\newcommand*{\contest@cap@figurename}{图}
+\newcommand*{\contest@cap@tablename}{表}
+\newcommand*{\contest@cap@appendixname}{附录}
+\newcommand*{\contest@cap@abstractname}{摘要}
  %%%  中文关键字
-\newcommand*{\myreport@cap@keywordsname}{关键字}
+\newcommand*{\contest@cap@keywordsname}{关键字}
 
 
 %设置目录格式
@@ -535,53 +562,53 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \crefrangeformat{equation}{公式(#3#1#4)\;\~{}\;(#5#2#6)}
 \crefmultiformat{equation}{公式(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{definition}{#2\mcm@cap@definition~#1#3}
-\crefrangeformat{definition}{\mcm@cap@definition~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{definition}{\mcm@cap@definition~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{definition}{#2\contest@cap@definition~#1#3}
+\crefrangeformat{definition}{\contest@cap@definition~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{definition}{\contest@cap@definition~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{theorem}{#2\mcm@cap@theorem~#1#3}
-\crefrangeformat{theorem}{\mcm@cap@theorem~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{theorem}{\mcm@cap@theorem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{theorem}{#2\contest@cap@theorem~#1#3}
+\crefrangeformat{theorem}{\contest@cap@theorem~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{theorem}{\contest@cap@theorem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{lemma}{#2\mcm@cap@lemma~#1#3}
-\crefrangeformat{lemma}{\mcm@cap@lemma~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{lemma}{\mcm@cap@lemma~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{lemma}{#2\contest@cap@lemma~#1#3}
+\crefrangeformat{lemma}{\contest@cap@lemma~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{lemma}{\contest@cap@lemma~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{corollary}{#2\mcm@cap@corollary~#1#3}
-\crefrangeformat{corollary}{\mcm@cap@corollary~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{corollary}{\mcm@cap@corollary~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{corollary}{#2\contest@cap@corollary~#1#3}
+\crefrangeformat{corollary}{\contest@cap@corollary~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{corollary}{\contest@cap@corollary~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{assumption}{#2\mcm@cap@assumption~#1#3}
-\crefrangeformat{assumption}{\mcm@cap@assumption~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{assumption}{\mcm@cap@assumption~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{assumption}{#2\contest@cap@assumption~#1#3}
+\crefrangeformat{assumption}{\contest@cap@assumption~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{assumption}{\contest@cap@assumption~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{conjecture}{#2\mcm@cap@conjecture~#1#3}
-\crefrangeformat{conjecture}{\mcm@cap@conjecture~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{conjecture}{\mcm@cap@conjecture~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{conjecture}{#2\contest@cap@conjecture~#1#3}
+\crefrangeformat{conjecture}{\contest@cap@conjecture~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{conjecture}{\contest@cap@conjecture~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{axiom}{#2\mcm@cap@axiom~#1#3}
-\crefrangeformat{axiom}{\mcm@cap@axiom~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{axiom}{\mcm@cap@axiom~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{axiom}{#2\contest@cap@axiom~#1#3}
+\crefrangeformat{axiom}{\contest@cap@axiom~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{axiom}{\contest@cap@axiom~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{principle}{#2\mcm@cap@principle~#1#3}
-\crefrangeformat{principle}{\mcm@cap@principle~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{principle}{\mcm@cap@principle~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{principle}{#2\contest@cap@principle~#1#3}
+\crefrangeformat{principle}{\contest@cap@principle~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{principle}{\contest@cap@principle~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{problem}{#2\mcm@cap@problem~#1#3}
-\crefrangeformat{problem}{\mcm@cap@problem~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{problem}{\mcm@cap@problem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{problem}{#2\contest@cap@problem~#1#3}
+\crefrangeformat{problem}{\contest@cap@problem~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{problem}{\contest@cap@problem~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{example}{#2\mcm@cap@example~#1#3}
-\crefrangeformat{example}{\mcm@cap@example~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{example}{\mcm@cap@example~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{example}{#2\contest@cap@example~#1#3}
+\crefrangeformat{example}{\contest@cap@example~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{example}{\contest@cap@example~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{proof}{#2\mcm@cap@proof~#1#3}
-\crefrangeformat{proof}{\mcm@cap@proof~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{proof}{\mcm@cap@proof~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{proof}{#2\contest@cap@proof~#1#3}
+\crefrangeformat{proof}{\contest@cap@proof~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{proof}{\contest@cap@proof~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
-\crefformat{solution}{#2\mcm@cap@solution~#1#3}
-\crefrangeformat{solution}{\mcm@cap@solution~(#3#1#4)\;\~{}\;(#5#2#6)}
-\crefmultiformat{solution}{\mcm@cap@solution~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
+\crefformat{solution}{#2\contest@cap@solution~#1#3}
+\crefrangeformat{solution}{\contest@cap@solution~(#3#1#4)\;\~{}\;(#5#2#6)}
+\crefmultiformat{solution}{\contest@cap@solution~(#2#1#3)}{ 和~(#2#1#3)}{，(#2#1#3)}{ 和~(#2#1#3)}
 
 \crefformat{algorithm}{#2算法#1#3}
 \crefrangeformat{algorithm}{算法(#3#1#4)\;\~{}\;(#5#2#6)}

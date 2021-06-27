@@ -20,27 +20,52 @@
 \tableofcontents
 \newpage
 
-\section{section}
-\subsection{subsection}
-\subsubsection{subsubsection}
+\begin{abstract}
+	\todo{300字以内的设计中文摘要}
 
-\section{符号表}
-
-\glsxtrnewsymbol[
-	description={%
-		an example symbol % 对符号的描述
-	},
-	unit={\si{m^2}} % 单位，不显示可以不写
-]{e}{\ensuremath{\mathcal{E}}}
-
-% 符号表
-\printunsrtglossary[type=symbols,style=symbunitlong] % symbols
-
-% 带单位的符号表
-% \printunsrtglossary[type=symbols,style=symblong] % symbols without units
+	\keywords{关键词1 \qquad
+    关键词2
+  }
+\end{abstract}
 
 
-\section{插入代码}
+
+\section{引言}
+
+\section{设计方案}
+
+
+\section{符号说明}
+
+	\glsxtrnewsymbol[
+		description={%
+			an example symbol % 对符号的描述
+		},
+		unit={\si{m^2}} % 单位，不显示可以不写
+	]{e}{\ensuremath{\mathcal{E}}}
+
+	% 符号表
+	\printunsrtglossary[type=symbols,style=symbunitlong] % symbols
+
+	% 带单位的符号表
+	% \printunsrtglossary[type=symbols,style=symblong] % symbols without units
+
+\section{理论分析与计算}
+
+\section{硬件电路设计}
+
+\section{软件设计}
+
+\section{系统测试}
+
+	\subsection{测试仪器及测试方法}
+
+	\subsection{测试过程及结果分析}
+
+\section{结论}
+
+
+\section*{插入代码}
 \begin{codebox}
   \Procname{$bubble\_sort$($A$: the array, $n$: the length of nums)}
   \li $a = 1$
@@ -48,7 +73,7 @@
 
 \end{codebox}
 
-\section{来自inkscape的图片}
+\section*{来自inkscape的图片}
 	%\cref{fig:_test}
 	\begin{figure}[H]
 		\centering

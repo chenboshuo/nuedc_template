@@ -5,6 +5,12 @@
 只是顺手做了一下，
 仅供参考
 
+## 特性
+-   [inkscape svg自动转换](https://inkscape.org/)
+-   [linux makefile](./makefile)
+-   [doxygen 文档生成并附加](https://www.doxygen.nl/index.html)
+-   [doxygen awesom css主体(就是网页看着好看一点了)](https://github.com/jothepro/doxygen-awesome-css)
+
 ## 使用
 
 
@@ -17,6 +23,43 @@ git submodule update
 ```
 
 ### 说明
+```text
+.
+├── docs                          # 存放程序说明文档
+│   ├── attachment_setting.tex    # 存放说明文档pdf的头文件
+│   ├── build                     # doxygen 创建的文件夹
+│   │   ├── doxygen_html          # 文档的html格式
+│   │   │   ├── index.html        # 文档首页
+│   │   ├── doxygen_latex         # 文档latex
+│   │   │   ├── Makefile          
+│   │   │   ├── refman.pdf        # LaTeX 说明文档
+│   │   │   ├── refman.tex        # 文档的原始 tex
+│   ├── Doxyfile                  # deoygen 设置文件
+│   └── doxygen-awesome-css       # doxgen 主题文件
+├── makefile
+├── README.md
+├── report
+│   ├── build
+│   │   ├── ebook.pdf             # 适用于移动设备，方便讨论
+│   │   ├── main.pdf              # 带TODO的文件
+│   │   ├── release.pdf           # 不带todo的文件
+│   │   └── release_without_attachment.pdf # 不带附录的文件
+│   ├── contestTemplate.cls       # 模板类
+│   ├── figures                   # 存放所有图片
+│   │   ├── cover.pdf             # 要求的封面
+│   │   ├── _test.pdf             # _开头表明又程序生成
+│   │   ├── _test.pdf_tex
+│   │   └── test.svg              # inkscape 原始文件
+│   ├── main.tex                  # 主文件
+│   ├── makefile  
+│   └── reference
+│       ├── notes.pdf             # 参赛手册
+│       └── reference.bib         # 参考文献bib
+└── src                           # 代码文件
+    ├── example.c                 # 如何写doxygen注释的说明
+    ├── lib                  
+    └── tests
+````
 
 ## 依据
 -   [2020年电赛陕西赛区参赛手册](http://nuedc.xidian.edu.cn/html/news/2020/0925/440.html)

@@ -10,6 +10,10 @@
 -   [linux makefile](./makefile)
 -   [doxygen 文档生成并附加](https://www.doxygen.nl/index.html)
 -   [doxygen awesom css主体(就是网页看着好看一点了)](https://github.com/jothepro/doxygen-awesome-css)
+-   pro 进阶功能
+    -   分文件
+    -   Python 做数值计算
+
 
 ## 使用
 
@@ -62,7 +66,7 @@ git submodule update
 ````
 
 ## 依据
--   [2020年电赛陕西赛区参赛手册](http://nuedc.xidian.edu.cn/html/news/2020/0925/440.html)
+-   [2021年电赛陕西赛区参赛手册](http://nuedc.xidian.edu.cn/html/news/2021/0713/454.html)
 
     > 设计报告封面和每页纸上一律不得出现参赛队的学校、代码、姓名等文字，否则取消评审资格。
 

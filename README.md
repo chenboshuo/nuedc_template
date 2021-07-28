@@ -55,7 +55,9 @@ git submodule update
 │   │   ├── _test.pdf_tex
 │   │   └── test.svg              # inkscape 原始文件
 │   ├── main.tex                  # 主文件
-│   ├── makefile  
+│   ├── makefile                  # linux 构建文件
+│   ├── make.ps1                  # powershell 构建脚本
+│   ├── quick_make.ps1            # 快速构建   
 │   └── reference
 │       ├── notes.pdf             # 参赛手册
 │       └── reference.bib         # 参考文献bib

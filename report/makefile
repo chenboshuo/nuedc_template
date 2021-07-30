@@ -46,7 +46,6 @@ release.tex: build
 	echo "\documentclass[pdfCover]{contestTemplate}" >> release.tex
 	awk 'FNR>5' main.tex >> release.tex
 
-release.tex:
 
 clean:
 	# git ls-files --others | xargs gio trash

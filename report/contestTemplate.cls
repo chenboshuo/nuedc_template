@@ -692,4 +692,8 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 % Set the right side of the footer to be the page number
 \fancyfoot[R]{\thepage}
 
+% remove this horizontal line at the top
+\renewcommand{\headrulewidth}{0pt}%
+
+
 \endinput
